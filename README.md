@@ -23,33 +23,6 @@ Apply these files to a fresh Monica installation to run the feature.
 - [SQL: AND-filter explained](#sql-and-filter-explained)
 - [Assumptions & Trade-offs](#assumptions--trade-offs)
 
----
-
-## Setup
-
-```bash
-# 1. Clone the repository and switch to the assessment branch
-git checkout envobyte-assignment
-
-# 2. Copy the environment file and fill in your credentials
-cp .env.example .env
-
-# 3. Set CACHE_DRIVER=redis in .env
-# CACHE_DRIVER=redis
-# REDIS_HOST=127.0.0.1
-
-# 4. Install dependencies
-composer install
-
-# 5. Run migrations
-php artisan migrate
-
-# 6. Run the test suite
-vendor/bin/phpunit --filter TagSystemTest --no-coverage
-```
-
----
-
 ## Changed Files
 
 ### New Files
